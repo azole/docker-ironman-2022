@@ -8,7 +8,7 @@
 
 - chapter 5: 第 5 章的範例程式
 - chapter 6: 第 6 章的範例程式
-- 附錄 A: 怎麼安裝 Docker
+- [附錄 A: 怎麼安裝 Docker](A-how-to-install-docker.md)
 
 ## 參考資料
 
