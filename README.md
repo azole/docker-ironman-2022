@@ -13,5 +13,3 @@
 ## 參考資料
 
 1. [鐵人賽 - 那些關於 docker 你知道與不知道的事](https://ithelp.ithome.com.tw/users/20151857/ironman/5419)
-2. [Docker Container 基礎入門篇 1](https://azole.medium.com/docker-container-%E5%9F%BA%E7%A4%8E%E5%85%A5%E9%96%80%E7%AF%87-1-3cb8876f2b14)
-3. [Docker Container 基礎入門篇 2](https://azole.medium.com/docker-container-%E5%9F%BA%E7%A4%8E%E5%85%A5%E9%96%80%E7%AF%87-2-c14d8f852ae4)
