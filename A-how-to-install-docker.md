@@ -1,5 +1,7 @@
 # How to install Docker
 
+工作坊時間有限，務必要先安裝好環境，這樣才能儘快進入重點！
+
 TOC
 
 - [How to install Docker](#how-to-install-docker)
