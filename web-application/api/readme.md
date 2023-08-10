@@ -11,4 +11,9 @@ docker push ashleylai/webconf2023
 docker container run -p 3001:3000 --rm ashleylai/webconf2023
 # run container in backgroud
 docker container run -p 3001:3000 -d --rm ashleylai/webconf2023
+
+# run by docker compose
+docker compose up
+# run by docker compose in backgroupd
+docker compose up -d
 ```
