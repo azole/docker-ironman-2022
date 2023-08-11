@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:18-slim
 
 # 建立工作目錄
 WORKDIR /app

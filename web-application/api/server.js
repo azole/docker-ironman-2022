@@ -4,12 +4,14 @@ const cors = require('cors');
 app.use(cors());
 
 app.get('/', (req, res) => {
+  console.log('GET /');
   res.json({
     message: 'Hello World',
   });
 });
 
 app.get('/conferences', (req, res) => {
+  console.log('GET /conferences');
   res.json({
     data: [
       {
@@ -58,8 +60,12 @@ app.get('/conferences', (req, res) => {
   });
 });
 
+app.use((req, res) => {
+  res.sendStatus(404);
+});
+
 app.use((err, req, res) => {
-  console.error(err);
+  console.error(err.message);
   res.sendStatus(500);
 });
 
