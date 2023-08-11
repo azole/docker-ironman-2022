@@ -1,6 +1,6 @@
 # Docker Container 是什麼？可以吃嗎？
 
-WebConf 2023
+WebConf 2023  
 2023/8/12
 
 共筆連結 https://hackmd.io/@webconf/BkImQ0Ds3/%2FhOq4Qte_TnSy0z8-dcCuig
@@ -9,4 +9,22 @@ WebConf 2023
 
 這次的 workshop 是專門為了前端工程師設計的，但我脫離前端一陣子了，隱約從 AppWorks School 前端班畢業的學員中聽聞他們工作的情況，因此設計了這個 workshop，希望可以讓前端工程師們也能試試看 Docker。
 
-如果你不是前端工程師，但從來沒用過 Docker，但想試試看，那也歡迎參考看看。
+如果你不是前端工程師，但從來沒用過 Docker，想試試看，那也歡迎參考看看。
+
+### 希望能做到的
+
+這個 workshop 希望能做到的是：
+
+- 不害怕 Docker、願意開始使用
+- 大概知道 Docker 是什麼
+- 知道 Docker 有什麼好處
+- 可以建立自己的 Docker Image
+
+### 做不到的
+
+有超級多做不到的東西，學無止境，歡迎大家找我一起學習跟討論！
+
+- Best Practices
+- Docker 原理與底層實作
+- Kubernetes
+- ...還有很多做不到
