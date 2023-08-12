@@ -28,3 +28,18 @@ WebConf 2023
 - Docker 原理與底層實作
 - Kubernetes
 - ...還有很多做不到
+
+## 背景故事
+
+我是一個前端工程師，後端工程師給我一個 Docker image 「ashleylai/webconf2023」，跟我說只要跑起來就可以有後端串接了，但，我不會 Docker 啊？
+
+BE: 面試時，你不是說你會 git 跟基礎的 Linux 指令嗎？
+我: 是沒有錯，但這跟 Docker 的關係是？
+BE: 那讓我來跟你確認幾個指令
+
+- `git pull` 跟 `git push` 你會嗎？
+- `ls` 跟 `ls -a` 是什麼意思？
+- `rm` 是什麼意思？
+- log 跟 build 這兩個單字是什麼意思？
+
+這些你都會的話，那你就會用 Docker 喔！
