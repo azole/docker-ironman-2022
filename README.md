@@ -22,3 +22,9 @@
 - chapter 5: 第 5 章的範例程式
 - chapter 6: 第 6 章的範例程式
 - [附錄 A: 怎麼安裝 Docker](A-how-to-install-docker.md)
+
+## 推薦閱讀
+
+- [[WebConf2023] Docker 入門 101](https://azole.medium.com/webconf2023-docker-%E5%85%A5%E9%96%80-101-fae89170553a)
+- [Docker Container 基礎入門篇 1](https://azole.medium.com/docker-container-%E5%9F%BA%E7%A4%8E%E5%85%A5%E9%96%80%E7%AF%87-1-3cb8876f2b14)
+- [Docker Container 基礎入門篇 2](https://azole.medium.com/docker-container-%E5%9F%BA%E7%A4%8E%E5%85%A5%E9%96%80%E7%AF%87-2-c14d8f852ae4)
