@@ -1,0 +1,4 @@
+FROM alpine
+
+COPY graceful-stop-ash.sh .
+CMD /graceful-stop-ash.sh

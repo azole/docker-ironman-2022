@@ -1,0 +1,4 @@
+FROM ubuntu
+
+COPY trap.sh .
+CMD ["/trap.sh"]

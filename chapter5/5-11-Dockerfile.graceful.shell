@@ -1,0 +1,4 @@
+FROM ubuntu
+
+COPY graceful-stop.sh .
+CMD /graceful-stop.sh
