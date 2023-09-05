@@ -3,7 +3,8 @@
 WebConf 2023  
 2023/8/12
 
-共筆連結 https://hackmd.io/@webconf/BkImQ0Ds3/%2FhOq4Qte_TnSy0z8-dcCuig
+詳細解說請參考：
+[[WebConf2023] Docker 入門 101](https://azole.medium.com/webconf2023-docker-%E5%85%A5%E9%96%80-101-fae89170553a)
 
 ## 前情提要
 
