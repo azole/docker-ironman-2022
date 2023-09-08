@@ -92,7 +92,7 @@ docker image build -t test -f Dockerfile .
 CMD npm start
 ```
 
-這兩種模式是有一些差別的，歡迎參考《Docker 實戰 6 堂課：56 個實驗動手做，掌握 Linux 容器核心技術》的第五章，書裡會帶著大家動手做一些實驗去研究兩者之間的差別。
+這兩種模式是有一些差別的，歡迎參考[《Docker 實戰 6 堂課：56 個實驗動手做，掌握 Linux 容器核心技術》](https://www.tenlong.com.tw/products/9786263335769)的第五章，書裡會帶著大家動手做一些實驗去研究兩者之間的差別。
 
 ## 結語
 
