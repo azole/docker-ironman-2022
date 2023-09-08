@@ -12,9 +12,10 @@ RUN npm ci && npm cache clean --force
 # 把所有檔案複製到 image 中
 COPY . .
 
-# 開啟 port
+# 用來指明這個 container 有監聽哪些 port number
 EXPOSE 3000
 
+# 指定在 container 中要執行哪個指令
 CMD ["npm", "start"]
 
 
