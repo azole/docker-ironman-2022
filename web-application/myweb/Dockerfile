@@ -1,5 +1,5 @@
 # build stage
-FROM node:18-slim as builder
+FROM node:18-alpine as builder
 
 # 建立工作目錄
 WORKDIR /app
