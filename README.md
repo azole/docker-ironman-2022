@@ -1,6 +1,9 @@
 # docker-ironman-2022
 
-書籍連結：[Docker 實戰 6 堂課：56 個實驗動手做，掌握 Linux 容器核心技術](https://www.tenlong.com.tw/products/9786263335769)
+書籍連結：
+
+- [Docker 實戰 6 堂課：56 個實驗動手做，掌握 Linux 容器核心技術(軟精裝)](https://www.tenlong.com.tw/products/9786263335769) -> 要絕版了喔
+- [Docker 實戰 6 堂課：56 個實驗動手做，掌握 Linux 容器核心技術(平裝)](https://www.tenlong.com.tw/products/9786263336131)
 
 本書內容改編自第 14 屆 iThome 鐵人賽 DevOps 組的冠軍系列文章《那些關於 Docker 你知道與不知道的事》。本書從啟動 Docker Container 開始，探索 Docker 的底層設計，進而學習 Linux 容器技術及其相關的 Linux 知識，包括 Namespace、Process 與網路等，同時也提供各種動手做實驗，讓你親手驗證讀到的理論與技術。
 
