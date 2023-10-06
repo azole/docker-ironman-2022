@@ -1,20 +1,19 @@
 # How to install Docker
 
-工作坊時間有限，務必要先安裝好環境，這樣才能儘快進入重點，如果安裝過程有任何疑問，歡迎來信或 Issues 留言討論！
-
-TOC
+- 工作坊時間有限，務必要先安裝好環境，這樣才能儘快進入重點，如果安裝過程有任何疑問，歡迎來信或 Issues 留言討論！
+- container 是 Linux 上的技術，可以的話就準備一台 Linux 主機來實驗，沒有也沒關係，Mac 跟 Windows 都一樣可以練習。
 
 - [How to install Docker](#how-to-install-docker)
   - [Linux](#linux)
   - [Mac](#mac)
   - [Windows](#windows)
   - [驗證是否安裝成功](#驗證是否安裝成功)
+    - [Linux](#linux-1)
+    - [Mac](#mac-1)
 
 ## Linux
 
-如果可以的話，準備以下環境：
-
-VM 或是 EC2: Ubuntu 22.04
+VM (例如 virtual box) 或是 EC2: Ubuntu 22.04 都可以。
 
 按照 docker 官方文件安裝 Docker:
 
@@ -58,35 +57,73 @@ sudo usermod -aG docker {your-username}
 docker version
 ```
 
-應出現類似以下的畫面：
+應出現類似以下的畫面，注意，版本號可能會略有不同。
+
+### Linux
 
 ```
 $ docker version
 Client: Docker Engine - Community
- Version:           24.0.2
+ Version:           24.0.5
  API version:       1.43
- Go version:        go1.20.4
- Git commit:        cb74dfc
- Built:             Thu May 25 21:51:00 2023
+ Go version:        go1.20.6
+ Git commit:        ced0996
+ Built:             Fri Jul 21 20:35:18 2023
  OS/Arch:           linux/amd64
  Context:           default
 
 Server: Docker Engine - Community
  Engine:
-  Version:          24.0.2
+  Version:          24.0.5
   API version:      1.43 (minimum version 1.12)
-  Go version:       go1.20.4
-  Git commit:       659604f
-  Built:            Thu May 25 21:51:00 2023
+  Go version:       go1.20.6
+  Git commit:       a61e2b4
+  Built:            Fri Jul 21 20:35:18 2023
   OS/Arch:          linux/amd64
   Experimental:     false
  containerd:
-  Version:          1.6.21
-  GitCommit:        3dce8eb055cbb6872793272b4f20ed16117344f8
+  Version:          1.6.22
+  GitCommit:        8165feabfdfe38c65b599c4993d227328c231fca
  runc:
-  Version:          1.1.7
-  GitCommit:        v1.1.7-0-g860f061
+  Version:          1.1.8
+  GitCommit:        v1.1.8-0-g82f18fe
  docker-init:
   Version:          0.19.0
   GitCommit:        de40ad0
+```
+
+### Mac
+
+```
+$ docker version
+
+Client:
+ Cloud integration: v1.0.35+desktop.4
+ Version:           24.0.6
+ API version:       1.43
+ Go version:        go1.20.7
+ Git commit:        ed223bc
+ Built:             Mon Sep  4 12:28:49 2023
+ OS/Arch:           darwin/arm64
+ Context:           desktop-linux
+
+Server: Docker Desktop 4.23.0 (120376)
+ Engine:
+  Version:          24.0.6
+  API version:      1.43 (minimum version 1.12)
+  Go version:       go1.20.7
+  Git commit:       1a79695
+  Built:            Mon Sep  4 12:31:36 2023
+  OS/Arch:          linux/arm64
+  Experimental:     false
+ containerd:
+  Version:          1.6.22
+  GitCommit:        8165feabfdfe38c65b599c4993d227328c231fca
+ runc:
+  Version:          1.1.8
+  GitCommit:        v1.1.8-0-g82f18fe
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+
 ```
