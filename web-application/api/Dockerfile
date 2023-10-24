@@ -16,8 +16,8 @@ COPY . .
 EXPOSE 3000
 
 # 指定在 container 中要執行哪個指令
-CMD ["npm", "start"]
-
+#CMD ["npm", "start"]
+CMD ["server.js"]
 
 
 
