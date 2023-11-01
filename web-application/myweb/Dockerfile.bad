@@ -1,0 +1,29 @@
+FROM node:18-alpine
+
+# 建立工作目錄
+WORKDIR /app
+
+# 把 package.json 跟 package-lock.json 複製到 image 中
+COPY package*.json ./
+
+# 安裝相依套件
+RUN npm ci && npm cache clean --force
+
+# 把所有檔案複製到 image 中
+COPY . .
+
+# 執行 build
+RUN npm run build
+
+RUN mkdir -p /usr/share/nginx/html
+
+COPY default.conf /etc/nginx/http.d/default.conf
+
+# 安裝 nginx
+RUN apk update && apk add nginx
+
+RUN cp -r build/* /usr/share/nginx/html/
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
