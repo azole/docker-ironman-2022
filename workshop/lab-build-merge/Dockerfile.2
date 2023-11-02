@@ -1,0 +1,18 @@
+# 使用 ubuntu:20.04 作為基底映像
+FROM ubuntu:20.04
+
+# 設置非互動模式，以避免 apt 在安裝時詢問問題
+ENV DEBIAN_FRONTEND=noninteractive
+
+# 更新套件列表並安裝 apache2
+RUN apt-get update && \
+    apt-get install -y apt-utils && \
+    apt-get install -y apache2 && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# 暴露 80 端口，因為 Apache 預設在此端口上運行
+EXPOSE 80
+
+# 設置 Apache 在前景模式運行，這樣當容器啟動時，它就不會立即終止
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
