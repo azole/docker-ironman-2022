@@ -4,3 +4,4 @@
 - 03: lab-build-cache
 - 04: lab-build-merge
 - 05: lab-multi-stage
+- 06: lab-multi-platform
