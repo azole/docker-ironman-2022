@@ -1,4 +1,4 @@
-FROM node:18-slim
+FROM node:18-alpine
 
 # 建立工作目錄
 WORKDIR /app
@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # 安裝相依套件
-RUN npm ci && npm cache clean --force
+RUN npm i && npm cache clean --force
 
 # 把所有檔案複製到 image 中
 COPY . .

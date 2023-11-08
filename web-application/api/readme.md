@@ -2,18 +2,19 @@
 
 ```bash
 # build image
-docker build -t ashleylai/webconf2023 .
+# image name (ashleylai/lab:api) 可以換成自己想要的名字
+docker build -t ashleylai/lab:api .
 
 # push image to Docker Hub
-docker push ashleylai/webconf2023
+docker push ashleylai/lab:api
 
 # pull image from Docker Hub
-docker pull ashleylai/webconf2023
+docker pull ashleylai/lab:api
 
 # run container
-docker container run -it -p 3001:3000 --rm ashleylai/webconf2023
-# run container in backgroud
-docker container run -d -p 3001:3000 --rm ashleylai/webconf2023
+docker container run -it -p 3001:3000 --rm ashleylai/lab:api
+# run container in backgroud (detach mode)
+docker container run -d -p 3001:3000 --rm ashleylai/lab:api
 
 # run by docker compose
 docker compose up

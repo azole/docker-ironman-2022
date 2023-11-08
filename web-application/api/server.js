@@ -56,6 +56,12 @@ app.get('/conferences', (req, res) => {
         url: 'https://k8s.ithome.com.tw/2023/',
         date: '2023/10/25',
       },
+      {
+        id: 8,
+        title: 'MWC 2023',
+        url: 'https://modernweb.tw/',
+        date: '2023/11/08',
+      },
     ],
   });
 });
@@ -69,6 +75,16 @@ app.use((err, req, res) => {
   res.sendStatus(500);
 });
 
-app.listen(3000, () => {
+const server = app.listen(3000, () => {
   console.log('Server is running...');
 });
+
+function handle(code) {
+  console.debug(`${code} signal received: closing HTTP server`);
+  server.close(() => {
+    console.debug('HTTP server closed');
+  });
+}
+
+process.on('SIGTERM', handle);
+process.on('SIGINT', handle);
