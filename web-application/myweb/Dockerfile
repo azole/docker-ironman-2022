@@ -8,14 +8,13 @@ WORKDIR /app
 COPY package*.json ./
 
 # 安裝相依套件
-RUN npm ci && npm cache clean --force
+RUN npm install
 
 # 把所有檔案複製到 image 中
 COPY . .
 
 # 執行 build
 RUN npm run build
-
 
 
 ###################################
