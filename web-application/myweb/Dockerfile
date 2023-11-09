@@ -20,6 +20,7 @@ RUN npm run build
 ###################################
 # production stage
 FROM nginx:alpine
+# FROM nginx:alpine-slim
 
 WORKDIR /usr/share/nginx/html
 
