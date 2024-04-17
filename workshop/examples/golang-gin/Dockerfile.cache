@@ -1,0 +1,22 @@
+FROM golang:1.22.2-alpine as builder
+WORKDIR /opt/app
+
+#COPY go.mod go.sum ./
+#RUN go mod download
+RUN --mount=type=cache,target=/go/pkg/mod/ \
+    --mount=type=bind,source=go.sum,target=go.sum \
+    --mount=type=bind,source=go.mod,target=go.mod \
+    go mod download -x
+
+COPY *.go ./
+#RUN CGO_ENABLED=0 GOOS=linux go build -o server
+RUN --mount=type=cache,target=/go/pkg/mod/ \
+    --mount=type=bind,target=. \
+    CGO_ENABLED=0 GOOS=linux go build -o /bin/server .
+
+
+FROM alpine:latest
+WORKDIR /opt/app
+COPY --from=builder /bin/server ./server
+EXPOSE 8080
+CMD ["./server"]
