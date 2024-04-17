@@ -1,6 +1,9 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"runtime"
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
 	r := gin.Default()
@@ -12,7 +15,14 @@ func main() {
 			"message": "pong",
 		})
 	})
-
+	r.GET("/platform", func(c *gin.Context) {
+		var osinfo = map[string]string {
+			"arch": runtime.GOARCH,
+			"os": runtime.GOOS,
+			"versoin": runtime.Version(),
+		}
+		c.JSON(200, osinfo)
+	})
 
 	r.Run() // listen and serve on 0.0.0.0:8080
 }
