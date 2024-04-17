@@ -1,5 +1,7 @@
 # NodeJS API Server for WebConf 2023
 
+- 有處理訊號的版本
+
 ```bash
 # build image
 # image name (ashleylai/lab:api) 可以換成自己想要的名字
