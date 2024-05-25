@@ -1,0 +1,15 @@
+FROM node:18-alpine
+
+# 建立工作目錄
+WORKDIR /app
+
+RUN npm i -g nodemon
+
+# 用來指明這個 container 有監聽哪些 port number
+EXPOSE 3000
+
+# 使用 non-root user 執行 container
+USER node
+
+# 開發用，所以用 nodemon 啟動程式
+CMD ["nodemon", "server.js"]
