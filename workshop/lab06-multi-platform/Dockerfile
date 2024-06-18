@@ -3,7 +3,6 @@ WORKDIR /opt/app
 COPY . .
 RUN go mod init main && go build -o main
 
-
 FROM alpine:latest
 WORKDIR /opt/app
 COPY --from=builder /opt/app/main ./main
