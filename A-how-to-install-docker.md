@@ -11,6 +11,15 @@
     - [Linux](#linux-1)
     - [Mac](#mac-1)
 
+## 版本
+
+差一點版本號沒有關係，接近就可以了。
+
+- Docker Desktop: 4.31.0
+- Docker client: 26.1.4
+- Docker server: 26.1.4
+- Docker scout: 1.9.3
+
 ## Linux
 
 VM (例如 virtual box) 或是 EC2: Ubuntu 22.04 都可以。
@@ -64,29 +73,29 @@ docker version
 ```
 $ docker version
 Client: Docker Engine - Community
- Version:           24.0.5
- API version:       1.43
- Go version:        go1.20.6
- Git commit:        ced0996
- Built:             Fri Jul 21 20:35:18 2023
+ Version:           26.1.3
+ API version:       1.45
+ Go version:        go1.21.10
+ Git commit:        b72abbb
+ Built:             Thu May 16 08:33:29 2024
  OS/Arch:           linux/amd64
  Context:           default
 
 Server: Docker Engine - Community
  Engine:
-  Version:          24.0.5
-  API version:      1.43 (minimum version 1.12)
-  Go version:       go1.20.6
-  Git commit:       a61e2b4
-  Built:            Fri Jul 21 20:35:18 2023
+  Version:          26.1.3
+  API version:      1.45 (minimum version 1.24)
+  Go version:       go1.21.10
+  Git commit:       8e96db1
+  Built:            Thu May 16 08:33:29 2024
   OS/Arch:          linux/amd64
   Experimental:     false
  containerd:
-  Version:          1.6.22
-  GitCommit:        8165feabfdfe38c65b599c4993d227328c231fca
+  Version:          1.6.31
+  GitCommit:        e377cd56a71523140ca6ae87e30244719194a521
  runc:
-  Version:          1.1.8
-  GitCommit:        v1.1.8-0-g82f18fe
+  Version:          1.1.12
+  GitCommit:        v1.1.12-0-g51d5e94
  docker-init:
   Version:          0.19.0
   GitCommit:        de40ad0
@@ -98,32 +107,30 @@ Server: Docker Engine - Community
 $ docker version
 
 Client:
- Cloud integration: v1.0.35+desktop.4
- Version:           24.0.6
- API version:       1.43
- Go version:        go1.20.7
- Git commit:        ed223bc
- Built:             Mon Sep  4 12:28:49 2023
+ Version:           26.1.4
+ API version:       1.45
+ Go version:        go1.21.11
+ Git commit:        5650f9b
+ Built:             Wed Jun  5 11:26:02 2024
  OS/Arch:           darwin/arm64
  Context:           desktop-linux
 
-Server: Docker Desktop 4.23.0 (120376)
+Server: Docker Desktop 4.31.0 (153195)
  Engine:
-  Version:          24.0.6
-  API version:      1.43 (minimum version 1.12)
-  Go version:       go1.20.7
-  Git commit:       1a79695
-  Built:            Mon Sep  4 12:31:36 2023
+  Version:          26.1.4
+  API version:      1.45 (minimum version 1.24)
+  Go version:       go1.21.11
+  Git commit:       de5c9cf
+  Built:            Wed Jun  5 11:29:12 2024
   OS/Arch:          linux/arm64
   Experimental:     false
  containerd:
-  Version:          1.6.22
-  GitCommit:        8165feabfdfe38c65b599c4993d227328c231fca
+  Version:          1.6.33
+  GitCommit:        d2d58213f83a351ca8f528a95fbd145f5654e957
  runc:
-  Version:          1.1.8
-  GitCommit:        v1.1.8-0-g82f18fe
+  Version:          1.1.12
+  GitCommit:        v1.1.12-0-g51d5e94
  docker-init:
   Version:          0.19.0
   GitCommit:        de40ad0
-
 ```
