@@ -20,6 +20,13 @@ int child_main(void* arg)
   printf("Child - inside the child!\n");
   printf("Child - child id: %d\n", getpid());
   printf("Child - parent id: %d\n", getppid());
+
+  // Make all inherited mounts private so changes don't propagate to parent namespace
+  mount(NULL, "/", NULL, MS_PRIVATE | MS_REC, NULL);
+  
+  // Mount a fresh proc so ps sees only this namespace's processes
+  mount("proc", "/proc", "proc", 0, NULL);
+  
   execv(child_args[0], child_args);
   printf("Something's wrong!\n");
   return 1;
